@@ -46,6 +46,9 @@
         <!-- Ovdje navodimo naše mapirane klase -->
        <mapping class="vidanec.edujp22.model.Osoba" />
         <mapping class="vidanec.edujp22.model.Smjer" />
+        <mapping class="vidanec.edujp22.model.Polaznik" />
+        <mapping class="vidanec.edujp22.model.Predavac" />
+        <mapping class="vidanec.edujp22.model.Grupa" />
         
     </session-factory>
 </hibernate-configuration>
