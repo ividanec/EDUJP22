@@ -5,6 +5,7 @@
  */
 package vidanec.edujp22;
 
+import vidanec.edujp22.utility.GeneratorOpis;
 import vidanec.edujp22.utility.HibernateUtil;
 
 /**
@@ -13,6 +14,7 @@ import vidanec.edujp22.utility.HibernateUtil;
  */
 public class Start {
     public static void main(String[] args) {
-        HibernateUtil.getSessionFactory().openSession();
+       // HibernateUtil.getSessionFactory().openSession();
+        System.out.println(GeneratorOpis.getOpis());
     }
 }
