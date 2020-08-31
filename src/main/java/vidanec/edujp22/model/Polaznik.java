@@ -5,8 +5,13 @@
  */
 package vidanec.edujp22.model;
 
+
+
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+
 
 /**
  *
@@ -15,9 +20,12 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Polaznik extends Entitet{
     private String brojUgovora;
+     
     
     @ManyToOne
+    @JoinColumn(name="osoba")
     private Osoba osoba;
+    
 
     public String getBrojUgovora() {
         return brojUgovora;

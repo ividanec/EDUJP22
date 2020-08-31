@@ -7,6 +7,7 @@ package vidanec.edujp22.model;
 
 import java.math.BigDecimal;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
@@ -22,6 +23,7 @@ public class Smjer extends Entitet{
     private Boolean verificiran;
     
     @ManyToOne
+    @JoinColumn(name="nadreden")
     private Smjer nadreden;
 
     public Smjer getNadreden() {

@@ -6,6 +6,7 @@
 package vidanec.edujp22.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  *

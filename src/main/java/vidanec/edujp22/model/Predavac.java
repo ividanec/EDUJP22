@@ -6,6 +6,7 @@
 package vidanec.edujp22.model;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
@@ -17,6 +18,7 @@ public class Predavac extends Entitet{
     private String iban;
     
     @ManyToOne
+    @JoinColumn(name="osoba")
     private Osoba osoba;
 
     public String getIban() {
