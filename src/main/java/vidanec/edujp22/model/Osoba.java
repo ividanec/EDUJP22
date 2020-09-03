@@ -51,6 +51,7 @@ public class Osoba extends Entitet{
     public void setOib(String oib) {
         this.oib = oib;
     }
-    
+
+ 
     
 }
