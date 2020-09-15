@@ -8,6 +8,7 @@ package vidanec.edujp22;
 import vidanec.edujp22.test.Test;
 import vidanec.edujp22.utility.GeneratorOpis;
 import vidanec.edujp22.utility.HibernateUtil;
+import vidanec.edujp22.view.LjubavniKalkulator;
 import vidanec.edujp22.view.Zadatak1;
 
 /**
@@ -17,6 +18,7 @@ import vidanec.edujp22.view.Zadatak1;
 public class Start {
     public static void main(String[] args) {
 //       HibernateUtil.getSessionFactory().openSession();
-        new Zadatak1().setVisible(true);
+//        new Zadatak1().setVisible(true);
+        new LjubavniKalkulator().setVisible(true);
     }
 }
