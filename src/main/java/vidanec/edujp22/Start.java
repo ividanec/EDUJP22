@@ -11,6 +11,7 @@ import vidanec.edujp22.utility.HibernateUtil;
 import vidanec.edujp22.utility.PocetniInsert;
 import vidanec.edujp22.view.Autorizacija;
 import vidanec.edujp22.view.LjubavniKalkulator;
+import vidanec.edujp22.view.SplashScreen;
 import vidanec.edujp22.view.Zadatak1;
 
 /**
@@ -19,12 +20,15 @@ import vidanec.edujp22.view.Zadatak1;
  */
 public class Start {
     public static void main(String[] args) {
+        
+        new SplashScreen().setVisible(true);
+        
 //       HibernateUtil.getSessionFactory().openSession();
 //        new Zadatak1().setVisible(true);
 //        new LjubavniKalkulator().setVisible(true);
 
 
-        new Autorizacija().setVisible(true);
+//        new Autorizacija().setVisible(true);
        // PocetniInsert.izvedi();
     }
 }
